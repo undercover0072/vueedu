@@ -18,7 +18,7 @@
     <script>
       const { createApp } = Vue;
       let now = new Date();
-      createApp({
+      let vm = createApp({
         data() {
           return {
             data1: "둘리"
@@ -26,6 +26,7 @@
         },
         computed: {
           data2() {
+            console.log("계산된 속성이 수행됨 : " + this.data1);
             return this.data1 + " 입니다!"
           },
           data3() {
@@ -37,7 +38,7 @@
           },
           data4() {
             let now = new Date();
-            if (now.getHours < 12)
+            if (now.getHours() < 12)
               return "오전";
             else
               return "오후";

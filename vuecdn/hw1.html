@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js sample</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+	<h2>다양한 속성 바인딩</h2>
+	<style>
+		.blue-underline {
+			text-decoration: underline;
+			color: blue;
+		}
+
+		.strike-through {
+			text-decoration: line-through;
+			color: lightgray
+		}
+
+		.dark {
+			background-color: darkgray;
+		}
+
+		img {
+			width : 100px;
+		}
+	</style>
+
+	<div id="app">
+		<p><a :href="vueURL">뷰(https://vuejs.org/)로 연결</a></p>
+		<p><img :src="imgFile">clover.png 표시</img></p>
+		<p :style="{textAlign:vueAlign1}">텍스트를 왼쪽 정렬</p>
+		<p :style="{textAlign:vueAlign2}">텍스트를 오른쪽 정렬</p>
+		<p :style="{textAlign:vueAlign3}">텍스트를 가운데 정렬</p>
+		<p :style="{color:vueColor}">인라인 스타일로 글자색을 빨간색으로</p>
+		<p :style="{color:vueColor, fontSize:vueSize}">
+			인라인 스타일로 글자크기를 150% 크게 빨간색으로</p>
+		<p :style="{color:vueColor, fontSize:vueSize, backgroundColor:vueBackground}">
+			인라인 스타일로 글자크기를 150% 크게 빨간색으로 배경은 노란색으로</p>
+		<p :class="[vueDecoration]">blue-underline class 지정</p>
+		<p :class="[vueDecoration, vueDark]">blue-underline, dark class 지정</p>
+	</div>
+
+	<script>
+		const { createApp } = Vue;
+		createApp({
+			data(){
+				return {
+					vueURL : "https://vuejs.org/",
+					imgFile : 'images/clover.png',
+					vueAlign1 : 'left',
+					vueAlign2 : 'right',
+					vueAlign3 : 'center',
+					vueColor : 'red',
+					vueSize : '150%',
+					vueBackground : 'yellow',
+					vueDecoration : 'blue-underline',
+					vueDark : 'dark'
+				}
+			}
+		}).mount('#app');
+	</script>
+</body>
+
+</html>

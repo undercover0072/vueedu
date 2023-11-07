@@ -17,7 +17,8 @@
     <script>
     const { createApp } = Vue;
 
-    createApp({
+    let vm = createApp({
+      name : 'App', 
       data() {
         let d = new Date();
         return {
