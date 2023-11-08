@@ -1,9 +1,10 @@
 export default {
-  template: `<h2>4조 - 시너지스</h2>
+  template: `<h2>4조 - null</h2>
                     <hr>
                     <ul>
-                    <li>강예원</li>
-                    <li>김용욱</li>
-                    <li>김창현</li>
+                    <li>문호준</li>
+                    <li>노은기</li>
+                    <li>손승범</li>
+                    <li>이해성</li>
                     </ul>`,
 };

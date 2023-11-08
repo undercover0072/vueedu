@@ -1,10 +1,10 @@
 export default {
-  template: `<h2>5조 - T-KO</h2>
+  template: `<h2>5조 - 오조의 마법사</h2>
                     <hr>
                     <ul>
-                    <li>김대엽</li>
-                    <li>김민성</li>
-                    <li>박주희</li>
-                    <li>홍승희</li>
+                    <li>김진수</li>
+                    <li>박희지</li>
+                    <li>윤상혁</li>
+                    <li>이승우</li>
                     </ul>`,
 };

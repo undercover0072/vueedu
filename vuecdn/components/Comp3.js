@@ -1,10 +1,9 @@
 export default {
-  template: `<h2>3조 - 글써조</h2>
+  template: `<h2>3조 - 쓰리스타</h2>
                     <hr>
                     <ul>
-                      <li>구인영</li>
-                      <li>김철진</li>
-                      <li>이소영</li>
-                      <li>한승현</li>
+                      <li>심현덕</li>
+                      <li>송지오</li>
+                      <li>조성윤</li>
                     </ul>`,
 };

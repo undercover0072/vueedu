@@ -1,10 +1,10 @@
 export default {
-  template: `<h2>2조 - 지니</h2>
-                   <hr>
+  template: `<h2>2조 - 유니미팅</h2>
+                  <hr>
                   <ul>
-                      <li>김주영</li>
-                      <li>김태현</li>
-                      <li>신다인</li>
-                      <li>최정우</li>
-                 </ul>`,
+                      <li>맹민재</li>
+                      <li>구도회</li>
+                      <li>전애림</li>
+                      <li>하동우</li>
+                  </ul>`,
 };

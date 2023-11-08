@@ -40,7 +40,8 @@
           someStr: {
             handler: function (val, oldVal) {
               console.log(`[someStr] ${val}-${oldVal}`)
-            }
+            },
+            immediate: true //즉시 실행 watch
           }, 
           someNum: {
             handler: function (val, oldVal) {
@@ -53,7 +54,7 @@
             },              
           },    
           'someObj.a' : {
-            hadler: function (val, oldVal) {
+            handler: function (val, oldVal) {
                 console.log(`[someObj.a] ${val}-${oldVal}`)
             },              
           },        
