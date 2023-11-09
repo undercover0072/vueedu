@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vue.js sample</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<style>
+			.atype {
+				border: 1px solid red;
+			}
+			.btype {
+				color: blue;
+				font-weight: bold;
+			}
+			img{
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<h1>우리팀의 정보를 출력하세요</h1>
+			<hr>
+			<my-component v-for="(item, index) in colorArray" v-bind:team-color="item">
+			</my-component>
+		</div>
+			<script>
+			//import MyComponent from './components/Comp4.js';
+
+			const { createApp } = Vue;
+
+			const MyComponent = {
+				template: `<h2 :style='{ color: teamColor }'>4조 - null</h2>
+                    <hr>
+                    <ul>
+                    <li>문호준</li>
+                    <li>노은기</li>
+                    <li>손승범</li>
+                    <li>이해성</li>
+                    </ul>`,
+					props: {
+					teamColor: String
+				}
+			}
+
+			createApp({
+				components: {
+					'my-component': MyComponent
+				},
+				data() {
+					return {
+						colorArray : ['blue', 'green', 'red']
+					}
+				}
+			}).mount('#app');
+		</script>
+	</body>
+</html>

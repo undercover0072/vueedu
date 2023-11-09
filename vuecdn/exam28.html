@@ -17,7 +17,7 @@
       const  {createApp}  = Vue;
       const MyComponent = {
 				template: '<p class="my-comp">나는 {{ myName }} 입니다.</p>',
-				props: {
+				props: { //정의된 속성은 자동으로 반응성을 갖게 된다
 					myName: String
 				}
 			}
