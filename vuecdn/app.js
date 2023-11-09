@@ -4,6 +4,7 @@ import Comp2 from './components/Comp2.js';
 import Comp3 from './components/Comp3.js';
 import Comp4 from './components/Comp4.js';
 import Comp5 from './components/Comp5.js';
+import Comp6 from './components/Comp6.js';
 
     const router = VueRouter.createRouter({
       history: VueRouter.createWebHashHistory(),
@@ -27,6 +28,10 @@ import Comp5 from './components/Comp5.js';
         {
           path: "/five",
           component: Comp5,
+        },
+        {
+          path: "/six",
+          component: Comp6,
         },
       ],
     });
