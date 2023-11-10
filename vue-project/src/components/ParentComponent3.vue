@@ -1,5 +1,5 @@
 <template>
-  <child-component3 @send-message="sendMessage" ref="child3" />
+  <child-component3 ref="child3" />
   <button type="button" @click="changeChildData">자식 컴포넌트 반응형 변수의 값을 변경해 보자</button>
 </template>
 <script>
